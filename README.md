@@ -3,7 +3,7 @@
 <h1>PGDiff: Guiding Diffusion Models for Versatile Face Restoration via Partial Guidance</h1>
 
 <div>
-    <a href='https://github.com/pq-yang/' target='_blank'>Peiqing Yang</a><sup>1</sup>&emsp;
+    <a href='https://pq-yang.github.io/' target='_blank'>Peiqing Yang</a><sup>1</sup>&emsp;
     <a href='https://shangchenzhou.com/' target='_blank'>Shangchen Zhou</a><sup>1</sup>&emsp;
     <a href='https://scholar.google.com.sg/citations?user=fMXnSGMAAAAJ&hl=en' target='_blank'>Qingyi Tao</a><sup>2</sup>&emsp;
     <a href='https://www.mmlab-ntu.com/person/ccloy/' target='_blank'>Chen Change Loy</a><sup>1</sup>
