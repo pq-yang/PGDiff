@@ -1,15 +1,16 @@
 <div align="center">
 
-<h1>Guiding Diffusion Models for Versatile Face Restoration via Partial Guidance</h1>
+<h1>PGDiff: Guiding Diffusion Models for Versatile Face Restoration via Partial Guidance</h1>
 
 <div>
-    <a href='https://github.com/pq-yang/' target='_blank'>Peiqing Yang</a>&emsp;
-    <a href='https://shangchenzhou.com/' target='_blank'>Shangchen Zhou</a>&emsp;
-    <a href='https://scholar.google.com.sg/citations?user=fMXnSGMAAAAJ&hl=en' target='_blank'>Qingyi Tao</a>&emsp;
-    <a href='https://www.mmlab-ntu.com/person/ccloy/' target='_blank'>Chen Change Loy</a>
+    <a href='https://github.com/pq-yang/' target='_blank'>Peiqing Yang</a><sup>1</sup>&emsp;
+    <a href='https://shangchenzhou.com/' target='_blank'>Shangchen Zhou</a><sup>1</sup>&emsp;
+    <a href='https://scholar.google.com.sg/citations?user=fMXnSGMAAAAJ&hl=en' target='_blank'>Qingyi Tao</a><sup>2</sup>&emsp;
+    <a href='https://www.mmlab-ntu.com/person/ccloy/' target='_blank'>Chen Change Loy</a><sup>1</sup>
 </div>
 <div>
-    S-Lab, Nanyang Technological University&emsp; 
+    <sup>1</sup>S-Lab, Nanyang Technological University&emsp; 
+    <sup>2</sup>SenseTime Research, Singapore&emsp; 
 </div>
 
 <div>
@@ -48,6 +49,7 @@
 </div>
 
 ## :postbox: Updates
+- 2023.8.23: Since our paper is under review, we will make the codes and models available upon acceptance. Please stay tuned! :bowtie:
 - 2023.08.16: This repo is created.
 
 ## :circus_tent: Applications
@@ -81,4 +83,7 @@
 <img src="assets/old_photo_1.png" width="800px"/>
 
 <img src="assets/old_photo_2.png" width="800px"/>
+
+## :phone: Contact
+If you have any questions, please feel free to reach out at `peiqingyang99@outlook.com`.
 
