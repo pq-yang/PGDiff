@@ -15,7 +15,7 @@
 
 <div>
     <h4 align="center">
-        • <a href="https://arxiv.org/list/cs.CV/recent" target='_blank'>[arXiv]</a> •
+        • <a href="https://arxiv.org/abs/2309.10810" target='_blank'>[arXiv]</a> •
     </h4>
 </div>
 
