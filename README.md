@@ -14,6 +14,10 @@
 </div>
 
 <div>
+    :triangular_flag_on_post: <strong>Accepted to NeurIPS 2023</strong>
+</div>
+
+<div>
     <h4 align="center">
         • <a href="https://arxiv.org/abs/2309.10810" target='_blank'>[arXiv]</a> •
     </h4>
