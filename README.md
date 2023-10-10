@@ -31,7 +31,7 @@
     :wink: If you find PGDiff helpful to your projects, please consider :star: this repo. Thanks!
 </div>
 
-
+<br/>
 :closed_book: <ins>Supported Applications</ins>
 
 <html>
@@ -39,14 +39,14 @@
         <tr>
             <td>
                 <!--left-->
-                <li><a href="br">Blind Restoration</a></li> 
-                <li><a href="col">Colorization</a></li> 
-                <li><a href="inp">Inpainting</a></li> 
+                <li><a href="https://github.com/pq-yang/PGDiff#blind-restoration">Blind Restoration</a></li> 
+                <li><a href="https://github.com/pq-yang/PGDiff#colorization">Colorization</a></li> 
+                <li><a href="https://github.com/pq-yang/PGDiff#inpainting">Inpainting</a></li> 
             </td>
             <td>
                 <!--right-->
-                <li><a href="rr">Reference-based Restoration</a></li> 
-                <li><a href="op">Old Photo Restoration (w/ scratches)</a></li> 
+                <li><a href="https://github.com/pq-yang/PGDiff#reference-based-restoration">Reference-based Restoration</a></li> 
+                <li><a href="https://github.com/pq-yang/PGDiff#old-photo-restoration">Old Photo Restoration (w/ scratches)</a></li> 
                 <li>[TODO] Natural Image Restoration</li>
             </td>
         </tr>
@@ -247,7 +247,7 @@ If you find our work useful for your research, please consider citing:
 }
 ```
 
-## :round_pushpin: License
+## :point_right: License
 This project is licensed under <a rel="license" href="https://github.com/pq-yang/PGDiff/blob/master/LICENSE">NTU S-Lab License 1.0</a>. Redistribution and use should follow this license.
 
 
