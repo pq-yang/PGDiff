@@ -28,7 +28,7 @@
 <strong>PGDiff builds a versatile framework that is applicable to a broad range of face restoration tasks.</strong>
 
 <div>
-    :wink: If you find PGDiff helpful to your projects, please consider :star: this repo. Thanks!
+    If you find PGDiff helpful to your projects, please consider :star: this repo. Thanks! :wink:
 </div>
 
 <br/>
@@ -239,10 +239,10 @@ python inference_pgdiff.py --task old_photo_restoration --in_dir testdata/op_cro
 ## :thumbsup: Citation
 If you find our work useful for your research, please consider citing:
 ```
-@article{yang2023pgdiff,
+@inproceedings{yang2023pgdiff,
   title={{PGDiff}: Guiding Diffusion Models for Versatile Face Restoration via Partial Guidance},
   author={Yang, Peiqing and Zhou, Shangchen and Tao, Qingyi and Loy, Chen Change},
-  journal={arXiv preprint arXiv:2309.10810},
+  booktitle={NeurIPS},
   year={2023}
 }
 ```
