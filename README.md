@@ -58,6 +58,7 @@
 </div>
 
 ## :postbox: Updates
+- 2023.12.04: Add an option to speed up the inference process by adjusting the number of denoising steps.
 - 2023.10.10: Release our codes and models. Have fun! :yum:
 - 2023.08.16: This repo is created.
 
@@ -85,6 +86,8 @@ Download the pretrained face diffusion model from [[Google Drive](https://drive.
 
 ## :circus_tent: Applications
 
+**:rocket: :rocket: If you want to speed up the inference process, you may choose to shorten the number of DDPM denoising steps by specifying a smaller `--timestep_respacing` argument (*e.g.*, `--timestep_respacing ddpm200` for 200 timesteps). We recommend at least 100 steps for a decent result.**
+
 <h3 id="br">Blind Restoration</h3>
 
 To extract smooth semantics from the input images, download the pretrained restorer from [[Google Drive](https://drive.google.com/file/d/13qG5ScClpmmMNndhsYeWqZx58p1h01EO/view?usp=sharing) | [BaiduPan (pw: pgdf)](https://pan.baidu.com/s/1IkEnPGDJqFcg4dKHGCH9PQ)] to the `models/restorer` folder. The pretrained restorer provided here is modified from the $\times$ 1 generator of [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN). *Note that the pretrained restorer can also be flexibly **replaced** with other restoration models by modifying the `create_restorer` function and specifying your own `--restorer_path` accordingly.*
@@ -95,7 +98,7 @@ Guidance scale $s$ for BFR is generally taken from [0.05, 0.1]. Smaller $s$ tend
 
 For cropped and aligned faces (512x512):
 ```
-python inference_pgdiff.py --task restoration --in_dir [image folder] --out_dir [result folder] --restorer_path [restorer path] --guidance_scale [s]
+python inference_pgdiff.py --task restoration --in_dir [image folder] --out_dir [result folder] --restorer_path [restorer path] --guidance_scale [s] --timestep_respacing ddpm[steps]
 ```
 
 Example:
@@ -114,7 +117,7 @@ We provide a set of color statistics in the `adaptive_instance_normalization` fu
 
 For cropped and aligned faces (512x512):
 ```
-python inference_pgdiff.py --task colorization --in_dir [image folder] --out_dir [result folder] --lightness_weight [w_l] --color_weight [w_c] --guidance_scale [s]
+python inference_pgdiff.py --task colorization --in_dir [image folder] --out_dir [result folder] --lightness_weight [w_l] --color_weight [w_c] --guidance_scale [s] --timestep_respacing ddpm[steps]
 ```
 
 Example:
@@ -144,7 +147,7 @@ A folder for mask(s) `mask_dir` must be specified with each mask image name corr
 
 For cropped and aligned faces (512x512):
 ```
-python inference_pgdiff.py --task inpainting --in_dir [image folder] --mask_dir [mask folder] --out_dir [result folder] --unmasked_weight [w_um] --guidance_scale [s]
+python inference_pgdiff.py --task inpainting --in_dir [image folder] --mask_dir [mask folder] --out_dir [result folder] --unmasked_weight [w_um] --guidance_scale [s] --timestep_respacing ddpm[steps]
 ```
 
 Example:
@@ -170,7 +173,7 @@ Similar to blind face restoration, reference-based restoration requires to tune 
 
 For cropped and aligned faces (512x512):
 ```
-python inference_pgdiff.py --task ref_restoration --in_dir [image folder] --ref_dir [reference folder] --out_dir [result folder] --ss_weight [w_ss] --ref_weight [w_ref] --guidance_scale [s]
+python inference_pgdiff.py --task ref_restoration --in_dir [image folder] --ref_dir [reference folder] --out_dir [result folder] --ss_weight [w_ss] --ref_weight [w_ref] --guidance_scale [s] --timestep_respacing ddpm[steps]
 ```
 
 Example:
@@ -195,7 +198,7 @@ python inference_pgdiff.py --task ref_restoration --in_dir testdata/ref_cropped_
 
 For cropped and aligned faces (512x512):
 ```
-python inference_pgdiff.py --task old_photo_restoration --in_dir [image folder] --mask_dir [mask folder] --out_dir [result folder] --op_lightness_weight [w_op_l] --op_color_weight [w_op_c] --guidance_scale [s]
+python inference_pgdiff.py --task old_photo_restoration --in_dir [image folder] --mask_dir [mask folder] --out_dir [result folder] --op_lightness_weight [w_op_l] --op_color_weight [w_op_c] --guidance_scale [s] --timestep_respacing ddpm[steps]
 ```
 
 #### Demos
