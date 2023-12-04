@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img src="assets/pgdiff_logo.png" height=110>
+  <img src="assets/pgdiff_logo.png" height=120>
 </p>
 
 <h1>PGDiff: Guiding Diffusion Models for Versatile Face Restoration via Partial Guidance</h1>
