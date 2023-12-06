@@ -1,8 +1,8 @@
 <div align="center">
 
-<p align="center">
-  <img src="assets/pgdiff_logo.png" height=120>
-</p>
+<div class="logo">
+    <img src="assets/pgdiff_logo.png" style="width:180px">
+</div>
 
 <h1>PGDiff: Guiding Diffusion Models for Versatile Face Restoration via Partial Guidance</h1>
 
@@ -32,7 +32,7 @@
 <strong>PGDiff builds a versatile framework that is applicable to a broad range of face restoration tasks.</strong>
 
 <div>
-    If you find PGDiff helpful to your projects, please consider :star: this repo. Thanks! :wink:
+    If you find PGDiff helpful to your projects, please consider ⭐ this repo. Thanks! 😉
 </div>
 
 <br/>
