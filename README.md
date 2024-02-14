@@ -94,7 +94,7 @@ Download the pretrained face diffusion model from [[Google Drive](https://drive.
 
 <h3 id="br">Blind Restoration</h3>
 
-To extract smooth semantics from the input images, download the pretrained restorer from [[Google Drive](https://drive.google.com/file/d/13qG5ScClpmmMNndhsYeWqZx58p1h01EO/view?usp=sharing) | [BaiduPan (pw: pgdf)](https://pan.baidu.com/s/1IkEnPGDJqFcg4dKHGCH9PQ)] to the `models/restorer` folder. The pretrained restorer provided here is modified from the $\times$ 1 generator of [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN). *Note that the pretrained restorer can also be flexibly **replaced** with other restoration models by modifying the `create_restorer` function and specifying your own `--restorer_path` accordingly.*
+To extract smooth semantics from the input images, download the pretrained restorer from [[Google Drive](https://drive.google.com/file/d/1XlpB873rHCn-T5UfUCXq_fAprhuBKR30/view?usp=sharing) | [BaiduPan (pw: pgdf)](https://pan.baidu.com/s/1IkEnPGDJqFcg4dKHGCH9PQ)] to the `models/restorer` folder. The pretrained restorer provided here is modified from the $\times$ 1 generator of [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN). *Note that the pretrained restorer can also be flexibly **replaced** with other restoration models by modifying the `create_restorer` function and specifying your own `--restorer_path` accordingly.*
 
 #### Commands
 
@@ -166,7 +166,7 @@ python inference_pgdiff.py --task inpainting --in_dir testdata/masked_faces --ma
 
 <h3 id="rr">Reference-based Restoration</h3>
 
-To extract identity features from both the reference image and the intermediate results, download the pretrained [ArcFace](https://insightface.ai/arcface) model from [[Google Drive](https://drive.google.com/file/d/1YWDPhqxNAtPb7t3ZJhbZ4a_sE8SqVhwX/view?usp=sharing) | [BaiduPan (pw: pgdf)](https://pan.baidu.com/s/1Ku-d57YYavAuScTFpvaP3Q)] to the `models` folder.
+To extract identity features from both the reference image and the intermediate results, download the pretrained [ArcFace](https://insightface.ai/arcface) model from [[Google Drive](https://drive.google.com/file/d/11l24OkqWWEm3OLNdUFA7StulJZ_m4pEX/view?usp=sharing) | [BaiduPan (pw: pgdf)](https://pan.baidu.com/s/1Ku-d57YYavAuScTFpvaP3Q)] to the `models` folder.
 
 A folder for reference image(s) `ref_dir` must be specified with each reference image name corresponding to each input image. A reference image is suggested to be a high-quality image from the same identity as the input low-quality image. *Test image pairs we provided here are from the [CelebRef-HQ](https://github.com/csxmli2016/DMDNet#celebref-hq-dataset) dataset.*
 
